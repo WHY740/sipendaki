@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPENDAKI - BPBD Kota Cirebon</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: #1e3a8a; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    nav a { color: white; margin-left: 1rem; text-decoration: none; }
+    nav { display: flex; align-items: center; gap: 1rem; }
+    .container { padding: 2rem; }
+    .intro { margin-bottom: 2rem; }
+    .grid { display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; }
+    .card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex: 1 1 300px; text-align: center; }
+    .gallery img { width: 100%; border-radius: 10px; height: auto; display: block; }
+    .login-btn { background: white; color: #1e3a8a; padding: 0.5rem 1rem; border-radius: 5px; border: none; cursor: pointer; font-weight: bold; }
+    .dashboard { background: #ffffff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 2rem; }
+    .dashboard h2 { color: #1e3a8a; margin-bottom: 1rem; }
+    .dashboard ul { list-style-type: disc; padding-left: 20px; }
+    .dashboard li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <strong>SIPENDAKI</strong> – Sistem Penyimpanan Data Kebencanaan
+    </div>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Data Kebencanaan</a>
+      <a href="#">Peta Rawan</a>
+      <a href="#">Galeri</a>
+      <a href="#dashboard">Dashboard</a>
+      <button class="login-btn">Login</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <h1>Selamat datang di SIPENDAKI</h1>
+      <p>Sistem Penyimpanan Data Kebencanaan Kota Cirebon yang tersentralisasi untuk menyimpan dan mengelola informasi kebencanaan.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Data Kebencanaan</h2>
+        <p>Lihat laporan kejadian, distribusi logistik, dan lainnya.</p>
+      </div>
+      <div class="card">
+        <h2>Peta Rawan Bencana</h2>
+        <p>Jelajahi wilayah rawan banjir, longsor, dan kebakaran.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h2>Galeri Dokumentasi</h2>
+      <div class="grid">
+        <div class="card"><img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Bencana 1"></div>
+        <div class="card"><img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Bencana 2"></div>
+        <div class="card"><img src="https://via.placeholder.com/300x200?text=Foto+3" alt="Bencana 3"></div>
+      </div>
+    </div>
+
+    <div id="dashboard" class="dashboard">
+      <h2>Dashboard SIPENDAKI</h2>
+      <ul>
+        <li>1. Data Kejadian Bencana</li>
+        <li>2. Peta Bencana
+          <ul>
+            <li>Peta Sebaran Banjir</li>
+            <li>Peta Jalur Evakuasi</li>
+          </ul>
+        </li>
+        <li>3. Renkon (Rencana Kontinjensi)
+          <ul>
+            <li>Banjir dan lainnya</li>
+          </ul>
+        </li>
+        <li>4. Dokumen Pendukung
+          <ul>
+            <li>KRB (Kajian Risiko Bencana)</li>
+            <li>RPB (Rencana Penanggulangan Bencana)</li>
+            <li>Renkon</li>
+          </ul>
+        </li>
+        <li>5. Dasar Hukum
+          <ul>
+            <li>Undang-Undang</li>
+            <li>Perka</li>
+            <li>Perda</li>
+            <li>Regulasi lainnya yang mendukung kebencanaan</li>
+          </ul>
+        </li>
+        <li>6. Data Warga Terdampak hingga tingkat RT</li>
+        <li>7. Data Pendistrbusian Bufferstock / Bantuan</li>
+        <li>8. Data DESTANA (Desa Tangguh Bencana)</li>
+        <li>9. Data Penyuluhan</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
